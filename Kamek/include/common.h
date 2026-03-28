@@ -145,5 +145,6 @@ namespace nw4r { namespace db {
 	void* sException();
 }}
 
+#define ARRAY_LEN(arr) (sizeof(arr) / sizeof(arr[0]))
 
 #endif

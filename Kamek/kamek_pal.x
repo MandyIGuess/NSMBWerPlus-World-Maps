@@ -1665,6 +1665,7 @@ SECTIONS {
 
 	DVD_Start__Fv = 0x8006A6F0;
 	DVD_LoadFile__FPvPcPcPv  = 0x800DF930;
+	DVD_LoadFiles__FPvPcPPciPv = 0x800DF8C0;
 	DVD_FreeFile__FPvPc = 0x800DF220;
 	DVD_StillLoading__FPv = 0x800DF5D0;
 	DVD_End__Fv = 0x8006A760;
@@ -2573,6 +2574,11 @@ SECTIONS {
 	sub_809310F0__22dCourseSelectManager_cFv = 0x809310F0;
 	sub_80931090__22dCourseSelectManager_cFv = 0x80931090;
 	sub_80931110__22dCourseSelectManager_cFv = 0x80931110;
+
+	setWorldMapArcName__9dScWMap_cFUcPc = 0x80102780;
+	mWmArcName__9dScWMap_c = 0x8042A520;
+	m_instance__9dScWMap_c = 0x8042A514;
+	m_WorldNo__9dScWMap_c = 0x8042A52D;
 
 	.text : {
 		FILL (0)

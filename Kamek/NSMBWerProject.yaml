@@ -78,3 +78,4 @@ modules:
   - processed/worldmaphax.yaml
 
   - processed/wm_dehardcode.yaml # Dehardcoding hacks
+  - processed/wm_resource.yaml   # Override resource loading for custom files

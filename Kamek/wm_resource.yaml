@@ -1,0 +1,18 @@
+---
+source_files: [../src/world_maps/wm_resource.cpp]
+hooks:
+  - name: NewSetRes
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80926BA0
+    target_func: 'WORLD_MAP_INIT_SetRes(void)'
+
+  - name: DeleteRes
+    type: branch_insn
+    branch_type: bl
+    src_addr_pal: 0x809278E4
+    target_func: 'DeleteWorldMapRes(void)'
+
+  - name: RemoveOrigDelete
+    type: nop_insn
+    area_pal: [0x809278E8, 0x80927A8C]

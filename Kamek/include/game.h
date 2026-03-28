@@ -48,6 +48,7 @@ bool DVD_Start();
 bool DVD_End();
 bool DVD_StillLoading(void *dvdclass2);
 void DVD_LoadFile(void *dvdclass, char *folder, char *file, void *callbackData);
+void DVD_LoadFiles(void *dvdclass, char *folder, char **files, int count, void *callbackData);
 void DVD_FreeFile(void *dvdclass2, char *file);
 
 extern void *DVDClass;
