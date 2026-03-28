@@ -1,0 +1,6 @@
+---
+source_files: []
+hooks:
+  # Remove hardcoded ambush fallback points, always use Point 0
+  - {name: AmbushFallback_DummyWorldBehavior, type: nop_insn, area_pal: [0x809076F8, 0x8090796C]}
+  - {name: AmbushFallback_GoToNode0, type: patch, addr_pal: 0x809076F4, data: '3B800000'}

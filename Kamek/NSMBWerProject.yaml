@@ -76,3 +76,5 @@ modules:
   - processed/nsmbwUpdated.yaml
   - processed/unusedActorSprites.yaml
   - processed/worldmaphax.yaml
+
+  - processed/wm_dehardcode.yaml # Dehardcoding hacks
