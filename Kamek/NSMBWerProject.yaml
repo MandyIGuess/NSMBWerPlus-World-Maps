@@ -77,5 +77,6 @@ modules:
   - processed/unusedActorSprites.yaml
   - processed/worldmaphax.yaml
 
-  - processed/wm_dehardcode.yaml # Dehardcoding hacks
+  - processed/wm_dehardcode.yaml # General dehardcoding hacks
   - processed/wm_resource.yaml   # Override resource loading for custom files
+  - processed/wm_culling.yaml    # Override actor/map culling information
