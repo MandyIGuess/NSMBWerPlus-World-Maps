@@ -1,15 +1,18 @@
-# NSMBWer+
+# NSMBWer+ - World Maps Fork
 ### Introduction
 
-This fork of the NSMBWer repo is a heavily modified version that aims to keep it up to date with current NSMBW modding while keeping everything from Vanilla intact.
-Most notably, this version uses the more sprites mod to implement every custom sprite and actor from Newer while keeping the ones they replaced.
+This fork of the NSMBWer+ repo aims to improve upon the retail World Maps as much as possible with enhancements and new features.
+
+See the changelog for full documentation of all changes made.
 
 ### Licensing
 
 Like in the original repo, the source code and tools are released under the MIT license.
 See the `LICENSE` file in this repository for full details.
 
-Copyright (c) 2010-2025 Newer Team, Ryguy
+Copyright (c) 2010-2025 Newer Team, Ryguy (NSMBWer+)
+
+Copyright (c) 2026 MandyIGuess
 
 ### Requirements
 
@@ -181,6 +184,9 @@ Open a terminal in the same directory and run it like:
 The resulting output is placed in a folder called `Build_NSMBWerProject`.
 These files go in `/Code` on the game disc (this folder is included in the Riivolution patch).
 
+## Changes From NSMBWer+:
+For all of the new features in this fork, see `CHANGELOG.md`.
+
 ## Changes From NewerSMBW:
 * Sprite slot expansion, with all Newer sprites being ported to it.
 * Crash fixes.
@@ -194,7 +200,7 @@ These files go in `/Code` on the game disc (this folder is included in the Riivo
 * Unused actors in the original game have been assigned sprite slots.
 
 
-### Credits
+### Original NSMBWer+ Credits
 * Newer Team - Original NewerSMBW Code
 * Nin0 & NSMLW Team - Programming assistance, general assistance, numerous bits of code, original NSMBWer
 * Bupcraft, Lurker, Smecko Geck, SupaNES, King Pixel & Others - Bug reporting
