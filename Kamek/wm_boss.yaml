@@ -1,0 +1,20 @@
+---
+source_files: [../src/world_maps/wm_boss.cpp]
+hooks:
+  - name: NewBossIndexArray
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x808F7190
+    target_func: 'GetBossIndex(int)'
+
+  - name: GetWorldBossProfID
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800FD290
+    target_func: 'GetWorldBossProfID(int)'
+
+  - name: CvtKoopalingSnd
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80105D20
+    target_func: 'cvtKoopalingSnd(void *, int)'

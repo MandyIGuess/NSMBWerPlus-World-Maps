@@ -1,0 +1,49 @@
+#include <common.h>
+#include <sfx.h>
+
+// Boss index list
+static const int sc_bossIdx[9] = {
+    BOSS_LARRY,
+    BOSS_ROY,
+    BOSS_LEMMY,
+    BOSS_WENDY,
+    BOSS_IGGY,
+    BOSS_MORTON,
+    BOSS_LUDWIG,
+    BOSS_KAMEK,
+    BOSS_KAMEK, // World 9, likely just a dummy
+};
+
+// Boss profile IDs, these MUST match with above array
+static const u16 sc_bossProfID[9] = {
+    ProfileId::WM_BOSS_LARRY,
+    ProfileId::WM_BOSS_ROY,
+    ProfileId::WM_BOSS_LEMMY,
+    ProfileId::WM_BOSS_WENDY,
+    ProfileId::WM_BOSS_IGGY,
+    ProfileId::WM_BOSS_MORTON,
+    ProfileId::WM_BOSS_LUDWIG,
+    ProfileId::WM_BOSS_KAMECK,
+    ProfileId::WM_BOSS_KAMECK,
+};
+
+// Boss sounds, these do not need to be modified if you're only changing the boss order
+static const int sc_KoopalingSnd[6][8] = {
+    {SE_VOC_LAR_FALL_INTO_MAP, SE_VOC_ROY_FALL_INTO_MAP, SE_VOC_WEN_FALL_INTO_MAP, SE_VOC_IGG_FALL_INTO_MAP,
+     SE_VOC_LEM_FALL_INTO_MAP, SE_VOC_MOR_FALL_INTO_MAP, SE_VOC_LUD_FALL_INTO_MAP, SE_VOC_KMC_FALL_INTO_MAP},
+
+    {SE_VOC_LAR_BRING_IT, SE_VOC_ROY_BRING_IT, SE_VOC_WEN_BRING_IT, SE_VOC_IGG_BRING_IT,
+     SE_VOC_LEM_BRING_IT, SE_VOC_MOR_BRING_IT, SE_VOC_LUD_BRING_IT, SE_VOC_KMC_BRING_IT},
+
+    {SE_VOC_LAR_BEAT_YOU, SE_VOC_ROY_BEAT_YOU, SE_VOC_WEN_BEAT_YOU, SE_VOC_IGG_BEAT_YOU,
+     SE_VOC_LEM_BEAT_YOU, SE_VOC_MOR_BEAT_YOU, SE_VOC_LUD_BEAT_YOU, SE_VOC_KMC_BEAT_YOU},
+
+    {SE_VOC_LAR_SHOVED, SE_VOC_ROY_SHOVED, SE_VOC_WEN_SHOVED, SE_VOC_IGG_SHOVED,
+     SE_VOC_LEM_SHOVED, SE_VOC_MOR_SHOVED, SE_VOC_LUD_SHOVED, 0},
+
+    {SE_VOC_LAR_CS_JUMP, SE_VOC_ROY_CS_JUMP, SE_VOC_WEN_CS_JUMP, SE_VOC_IGG_CS_JUMP,
+     SE_VOC_LEM_CS_JUMP, SE_VOC_MOR_CS_JUMP, SE_VOC_LUD_CS_JUMP, 0},
+
+    {SE_VOC_LAR_CS_JUMP_F, SE_VOC_ROY_CS_JUMP_F, SE_VOC_WEN_CS_JUMP_F, SE_VOC_IGG_CS_JUMP_F,
+     SE_VOC_LEM_CS_JUMP_F, SE_VOC_MOR_CS_JUMP_F, SE_VOC_LUD_CS_JUMP_F, 0},
+};
