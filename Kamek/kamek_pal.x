@@ -2587,6 +2587,8 @@ SECTIONS {
 	returnFromWmCloudCull2 = 0x808CDA80;
 
 	bossJump__12daWmToride_cFi = 0x808F2C80;
+	dWmSeManager_c__m_pInstance = 0x8042A55C;
+	dWmSeManager_c__playSoundAtPos__FPviP7Point3dUi = 0x80105350;
 
 	.text : {
 		FILL (0)

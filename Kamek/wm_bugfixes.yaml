@@ -1,5 +1,5 @@
 ---
-source_files: [../src/world_maps/wm_bugfixes.S]
+source_files: [../src/world_maps/wm_bugfixes.S, ../src/world_maps/wm_bugfixes.cpp]
 hooks:
   - name: FixTowerJumpEffect
     type: branch_insn
