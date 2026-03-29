@@ -69,7 +69,7 @@ static const f32 wmActorCullRadius[] = {
     250.0f,   // WM_DANCE_PAKKUN : World 6 decorative pipe Piranha Plants 
     250.0f,   // WM_DOKANROUTE   : Animated pipe routes for World 6
     250.0f,   // WM_HANACHAN     : Wiggler in the background of World 5
-    250.0f,   // WM_TOGEZO       : Unused actor
+    250.0f,   // WM_TOGEZO       : Spiny seen when defeating a World 2 ambush
     250.0f,   // WM_MANTA        : Unused actor
     80.0f,    // WM_TERESA       : Ghost House Boo
 };
