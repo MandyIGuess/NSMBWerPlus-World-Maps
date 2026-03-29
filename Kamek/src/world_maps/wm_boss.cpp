@@ -2,18 +2,6 @@
 #include <dScWMap_c.h>
 #include "world_maps/data/boss_data.h"
 
-// Internal boss order, DO NOT EDIT
-enum BOSS_INDEX_e {
-    BOSS_LARRY,
-    BOSS_ROY,
-    BOSS_WENDY,
-    BOSS_IGGY,
-    BOSS_LEMMY,
-    BOSS_MORTON,
-    BOSS_LUDWIG,
-    BOSS_KAMEK,
-};
-
 int GetBossIndex(int worldNo) {
     return sc_bossIdx[worldNo];
 }

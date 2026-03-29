@@ -1,6 +1,18 @@
 #include <common.h>
 #include <sfx.h>
 
+// Internal boss order, DO NOT EDIT
+enum BOSS_INDEX_e {
+    BOSS_LARRY,
+    BOSS_ROY,
+    BOSS_WENDY,
+    BOSS_IGGY,
+    BOSS_LEMMY,
+    BOSS_MORTON,
+    BOSS_LUDWIG,
+    BOSS_KAMEK,
+};
+
 // Boss index list
 static const int sc_bossIdx[9] = {
     BOSS_LARRY,
