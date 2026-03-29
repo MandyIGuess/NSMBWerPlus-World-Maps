@@ -2586,6 +2586,8 @@ SECTIONS {
 	returnFromWmCloudCull1 = 0x808CD9E8;
 	returnFromWmCloudCull2 = 0x808CDA80;
 
+	bossJump__12daWmToride_cFi = 0x808F2C80;
+
 	.text : {
 		FILL (0)
 
