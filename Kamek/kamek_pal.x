@@ -2590,6 +2590,14 @@ SECTIONS {
 	dWmSeManager_c__m_pInstance = 0x8042A55C;
 	dWmSeManager_c__playSoundAtPos__FPviP7Point3dUi = 0x80105350;
 
+	isStop_ClrAnm__13dWmMapModel_cFPCc = 0x800F0BE0;
+	isStop_ChrAnm__13dWmMapModel_cFPCc = 0x800F0910;
+
+	m_instance__9daWmMap_c = 0x8042A46C;
+	chkProcCourseUnlock__9daWmMap_cFv = 0x808E2B50;
+	getRouteAnimType__9daWmMap_cFv = 0x808E10C0;
+	getRouteAnimType__9daWmMap_cFPCc = 0x808E1150;
+
 	.text : {
 		FILL (0)
 
