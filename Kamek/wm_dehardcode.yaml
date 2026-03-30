@@ -1,6 +1,12 @@
 ---
-source_files: []
+source_files: [../src/world_maps/wm_dehardcode.S, ../src/world_maps/wm_dehardcode.cpp]
 hooks:
   # Remove hardcoded ambush fallback points, always use Point 0
   - {name: AmbushFallback_DummyWorldBehavior, type: nop_insn, area_pal: [0x809076F8, 0x8090796C]}
   - {name: AmbushFallback_GoToNode0, type: patch, addr_pal: 0x809076F4, data: '3B800000'}
+
+  - name: CourseSelectGuide_DynamicStartIcon
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80010D44
+    target_func: 'CourseSelectGuide_DynamicStartIcon'

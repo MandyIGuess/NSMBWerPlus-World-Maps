@@ -2598,6 +2598,8 @@ SECTIONS {
 	getRouteAnimType__9daWmMap_cFv = 0x808E10C0;
 	getRouteAnimType__9daWmMap_cFPCc = 0x808E1150;
 
+	ReturnFromDynamicStartIcon = 0x80010D74;
+
 	.text : {
 		FILL (0)
 
