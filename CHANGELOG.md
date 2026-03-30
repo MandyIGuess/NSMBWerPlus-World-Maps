@@ -8,4 +8,5 @@
   * See `/src/world_maps/data/culling_map_model.h` for culling the map itself
   * See `/src/world_maps/data/culling_wm_cloud.h` for culling the World 7 clouds
 * Support for changing which boss is present in a world.
-* Fixed a bug where the Tower appears jumped on when bosses jump into a Castle
+* Fixed a bug where the Tower appears jumped on when bosses jump into a Castle.
+* Dehardcoded the HUD icon for the Start Nodes, they will display the direction of the node itself.
