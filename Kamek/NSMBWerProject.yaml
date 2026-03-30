@@ -82,3 +82,4 @@ modules:
   - processed/wm_culling.yaml    # Override actor/map culling information
   - processed/wm_boss.yaml       # Hacks related to World Map bosses 
   - processed/wm_bugfixes.yaml   # World Map bugfixes of all kinds
+  - processed/wm_script.yaml     # Override map sequence data

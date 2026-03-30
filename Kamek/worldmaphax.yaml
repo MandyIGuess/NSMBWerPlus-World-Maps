@@ -5,7 +5,7 @@
 # 80904440 determines what animation plays when entering a level
 
 # The stuff that has been commented out can be enabled at will
-source_files: [../src/worldmaphax.S, ../src/worldmapManager.cpp, ../src/starcoinmenu.cpp, ../src/worldmapScripts.cpp, ../src/worldmapScripts.S]
+source_files: [../src/worldmaphax.S, ../src/worldmapManager.cpp, ../src/starcoinmenu.cpp]
 hooks:
 # Cannon Destinations
   - {name: W1CannonDest, type: patch, addr_pal: 0x802f4cf0, data: '00000004'} #world num - 1
@@ -81,12 +81,6 @@ hooks:
     branch_type: b
     src_addr_pal: 0x807752d0
     target_func: 'addReplayAndHardMode(dCollectionCoin_c *)'
-  
-  - name: useCustomScripts
-    type: branch_insn
-    branch_type: b
-    src_addr_pal: 0x801016C8
-    target_func: 'useCustomScripts'
   
   - name: expandMapHeap
     type: patch

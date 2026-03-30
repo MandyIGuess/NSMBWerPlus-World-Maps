@@ -5,7 +5,6 @@ typedef struct ScriptCommand {
     u32 argument;
 } ScriptCommand;
 
-
 ScriptCommand Z_default_clr[] = {
     {140, 0},
     {115, 0},
@@ -301,7 +300,7 @@ ScriptCommand Z_cannon[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x11[] = {
+ScriptCommand Z_trship_appear[] = {
     {0, 60},
     {31, 0},
     {32, 0},
@@ -445,7 +444,7 @@ ScriptCommand Z_W_Cannon_in_Normal[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x1a[] = {
+ScriptCommand Z_W1_toride_clr[] = {
     {0, 2},
     {140, 0},
     {128, 0},
@@ -464,7 +463,7 @@ ScriptCommand script_0x1a[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x1b[] = {
+ScriptCommand Z_W1_castle_clr[] = {
     {140, 0},
     {114, 0},
     {128, 0},
@@ -482,7 +481,7 @@ ScriptCommand script_0x1b[] = {
     {5, 0},
 };
 
-ScriptCommand Z_wSign_koopaCastle_in[] = {
+ScriptCommand Z_W3_castle_clr[] = {
     {140, 0},
     {114, 0},
     {128, 0},
@@ -510,7 +509,7 @@ ScriptCommand Z_wSign_koopaCastle_in[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x1d[] = {
+ScriptCommand Z_fade_test[] = {
     {0, 120},
     {9, 0},
     {0, 60},
@@ -581,7 +580,7 @@ ScriptCommand Z_start_kinoko_in[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x24[] = {
+ScriptCommand Z_airship_gonext[] = {
     {140, 0},
     {114, 0},
     {164, 0},
@@ -599,7 +598,7 @@ ScriptCommand script_0x24[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x25[] = {
+ScriptCommand Z_W36_Clear_Normal[] = {
     {140, 0},
     {114, 0},
     {128, 0},
@@ -706,7 +705,7 @@ ScriptCommand Z_KinopioStart[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x2d[] = {
+ScriptCommand Z_WorldIn_NoShip[] = {
     {0, 2},
     {128, 0},
     {121, 30},
@@ -729,7 +728,7 @@ ScriptCommand script_0x2d[] = {
     {5, 0},
 };
 
-ScriptCommand script_0x2e[] = {
+ScriptCommand Z_WorldIn_Jump_NoShip[] = {
     {0, 2},
     {128, 0},
     {121, 30},
@@ -866,7 +865,7 @@ ScriptCommand *world_map_scripts_table[] = {
     Z_ghost_fail,
     Z_ghost_fail2,
     Z_cannon,
-    script_0x11,
+    Z_trship_appear,
     Z_dokan,
     Z_dokan_warp,
     Z_dokan_start,
@@ -875,18 +874,18 @@ ScriptCommand *world_map_scripts_table[] = {
     Z_W_Flying_in,
     Z_W_Cannon_in,
     Z_W_Cannon_in_Normal,
-    script_0x1a,
-    script_0x1b,
-    Z_wSign_koopaCastle_in,
-    script_0x1d,
+    Z_W1_toride_clr,
+    Z_W1_castle_clr,
+    Z_W3_castle_clr,
+    Z_fade_test,
     Z_view_world,
     Z_course_in,
     Z_kinoko_out,
     Z_airship_course_in,
     Z_airship_course_out,
     Z_start_kinoko_in,
-    script_0x24,
-    script_0x25,
+    Z_airship_gonext,
+    Z_W36_Clear_Normal,
     Z_null,
     Z_antlion,
     Z_killer,
@@ -894,8 +893,8 @@ ScriptCommand *world_map_scripts_table[] = {
     Z_Switch,
     Z_KoopaCastleAppear,
     Z_KinopioStart,
-    script_0x2d,
-    script_0x2e,
+    Z_WorldIn_NoShip,
+    Z_WorldIn_Jump_NoShip,
     Z_Pause_Menu,
     Z_airship_clear,
     Z_Stock_Menu,

@@ -1,0 +1,8 @@
+---
+source_files: [../src/world_maps/wm_script.cpp, ../src/world_maps/wm_script.S]
+hooks:
+  - name: UseCustomScripts
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x801016C8
+    target_func: 'UseCustomScripts'
