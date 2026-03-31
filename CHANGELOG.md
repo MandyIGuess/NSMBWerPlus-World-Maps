@@ -10,3 +10,5 @@
 * Support for changing which boss is present in a world.
 * Fixed a bug where the Tower appears jumped on when bosses jump into a Castle.
 * Dehardcoded the HUD icon for the Start Nodes, they will display the direction of the node itself.
+* Fixed a bug with CLR route animations where they would improperly report as being completed, thus
+making the next route anim (or the course unlock) happen earlier than intended.

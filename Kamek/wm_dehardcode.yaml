@@ -10,3 +10,12 @@ hooks:
     branch_type: b
     src_addr_pal: 0x80010D44
     target_func: 'CourseSelectGuide_DynamicStartIcon'
+
+  # Fixes CLR anims being reported as completed, when they really aren't
+  # It mistakenly uses 0 instead of the animation's proper index
+  - {name: FixRouteCLRAnimBug1, type: nop_insn, area_pal: 0x800EFB58}
+  - {name: FixRouteCLRAnimBug2, type: nop_insn, area_pal: 0x800EFB68}
+
+  # Same as above, but for the (unfinished) TexSRT route anim type
+  - {name: FixRouteSRTAnimBug1, type: nop_insn, area_pal: 0x800EFC08}
+  - {name: FixRouteSRTAnimBug2, type: nop_insn, area_pal: 0x800EFC18}
