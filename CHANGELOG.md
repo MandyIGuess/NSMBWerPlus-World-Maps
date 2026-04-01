@@ -12,3 +12,4 @@
 * Dehardcoded the HUD icon for the Start Nodes, they will display the direction of the node itself.
 * Fixed a bug with CLR route animations where they would improperly report as being completed, thus
 making the next route anim (or the course unlock) happen earlier than intended.
+* Support for removing World 3-4 (switch course) hardcodes. Uncomment `wm_W304.yaml` in the project YAML to remove them

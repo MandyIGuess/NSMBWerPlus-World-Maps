@@ -187,6 +187,9 @@ These files go in `/Code` on the game disc (this folder is included in the Riivo
 ## Changes From NSMBWer+:
 For all of the new features in this fork, see `CHANGELOG.md`.
 
+Certain features may be game-breaking or heavily alter the functionality of the retail maps. Features like those
+will be disabled by default, and will require the code to be recompiled to enable them.
+
 ## Changes From NewerSMBW:
 * Sprite slot expansion, with all Newer sprites being ported to it.
 * Crash fixes.
