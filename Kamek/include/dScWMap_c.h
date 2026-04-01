@@ -3,6 +3,7 @@
 
 class dScWMap_c : public dScene_c {
 public:
+    int getCourseNumFromPointName(u8 *pointName);
     static void setWorldMapArcName(u8 worldNo, char *pBuffer); // 0x80102780
 
     static char mWmArcName[6]; // 0x8042A520

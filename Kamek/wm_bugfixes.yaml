@@ -15,3 +15,10 @@ hooks:
   # Same as above, but for the (unfinished) TexSRT route anim type
   - {name: FixRouteSRTAnimBug1, type: nop_insn, area_pal: 0x800EFC08}
   - {name: FixRouteSRTAnimBug2, type: nop_insn, area_pal: 0x800EFC18}
+
+  # Allow Tower/Castle 2 (WxT1 and WxC1) courses to have Star Coins
+  - name: StarCoinsForTowerCastle2
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x80928510
+    target_func: 'dScWMap_c::getCourseNumFromPointName(unsigned char *)'

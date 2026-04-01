@@ -42,6 +42,7 @@
 #define STAGE_TITLE		39
 #define STAGE_PEACH		40
 #define STAGE_STAFFROLL	41
+#define STAGE_INVALID	42
 
 enum StageGroup {
 	Normal = 0,

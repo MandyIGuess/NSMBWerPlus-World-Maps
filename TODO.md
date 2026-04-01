@@ -2,6 +2,8 @@
 ## TODO List
 
 * Dehardcoded Palm Tree actors
+* Add support for XX-10 -> XX-19 course nodes
+* Add support for editing the "last course" table which handles some stuff
 
 ### New Features (Not guaranteed):
 * Reimplement WM_TOWER course object with fortress-like interactions
