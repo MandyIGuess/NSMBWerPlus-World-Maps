@@ -1,0 +1,13 @@
+---
+source_files: [../src/world_maps/wm_point.cpp]
+hooks:
+  - name: ReadTwoDigitCourseNo
+    type: patch
+    addr_pal: 0x800F969C
+    data: '387E0002'
+
+  - name: MakeTwoDigitCourseNo
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800F9480
+    target_func: 'dWmLib::MakePointNameFromCourseNo(int, int, char *)'

@@ -84,3 +84,4 @@ modules:
   - processed/wm_bugfixes.yaml   # World Map bugfixes of all kinds
   - processed/wm_script.yaml     # Override map sequence data
   # - processed/wm_W304.yaml       # Disables hardcoded World 3 / W304 node behavior
+  # - processed/wm_point.yaml      # Hacks related to points and nodes (commented out since the Wx1y feature is currently WIP)

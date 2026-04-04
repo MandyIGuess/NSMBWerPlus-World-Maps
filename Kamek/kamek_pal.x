@@ -2600,6 +2600,9 @@ SECTIONS {
 
 	ReturnFromDynamicStartIcon = 0x80010D74;
 
+	MakeKinokoHouseName__6dWmLibFiPc = 0x800F9730;
+	GetCourseTypeFromCourseNo__6dWmLibFi = 0x800F9950;
+
 	.text : {
 		FILL (0)
 
