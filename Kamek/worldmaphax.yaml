@@ -69,6 +69,10 @@ hooks:
   # - {name: removeIvyW7, type: nop_insn, area_pal: 0x808e1cd0}
   # - {name: removeBowserCastleFlag, type: nop_insn, area_pal: 0x808ff348}
 
+  # - {name: removeCastleHint,    type: patch, addr_pal: 0x808FC98C, data: '38000001'}
+  # - {name: removeToadHouseHint, type: patch, addr_pal: 0x808FC368, data: '38000001'}
+  # - {name: removeGameOverHint,  type: patch, addr_pal: 0x808FC72C, data: '38000001'}
+
 # important stuff, don't mess with unless you know what you're doing
   - name: wmLoop
     type: branch_insn
