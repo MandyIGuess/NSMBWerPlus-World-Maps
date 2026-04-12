@@ -10,3 +10,9 @@ hooks:
     branch_type: b
     src_addr_pal: 0x80010D44
     target_func: 'CourseSelectGuide_DynamicStartIcon'
+
+  - name: NewLastCourseList
+    type: branch_insn
+    branch_type: b
+    src_addr_pal: 0x800FCA50
+    target_func: 'GetLastCourse(int)'

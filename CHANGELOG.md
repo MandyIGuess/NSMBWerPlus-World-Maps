@@ -15,3 +15,4 @@ making the next route anim (or the course unlock) happen earlier than intended.
 * Support for removing World 3-4 (switch course) hardcodes. Uncomment `wm_W304.yaml` in the project YAML to remove them
 * Added support for Tower/Castle 2 courses having Star Coins with the retail condition system (no difference is noticable when using LevelInfo)
 * Added patches to remove the "hint" messages seen when exiting Toad Houses, Peach's Castle, or getting a Game Over (off by default)
+* Added support for changing the "Last Course" list, which controls some behavior regarding 8-Castle's completion, and if the W5 vines spawn

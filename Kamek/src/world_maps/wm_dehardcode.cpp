@@ -1,5 +1,6 @@
 #include <game.h>
 #include <stage.h>
+#include "world_maps/data/common_data.h"
 
 // Choose the start node icon by its name instead of hardcoding it per-world
 int GetStartNodeIconID() {
@@ -12,4 +13,11 @@ int GetStartNodeIconID() {
         }
     }
     return msgID;
+}
+
+int GetLastCourse(int world) {
+    if (world < 8) {
+        return sc_LastCourse[world];
+    }
+    return STAGE_INVALID;
 }
