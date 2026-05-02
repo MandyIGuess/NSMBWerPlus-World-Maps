@@ -44,7 +44,8 @@ hooks:
 
 # Effect Removals
   # - {name: removeW3Snow, type: nop_insn, area_pal: [0x80321978, 0x80321988]}
-  # - {name: removeW5PoisonBubble, type: nop_insn, area_pal: 0x803219cc}
+  # - {name: removeW5PoisonBubble, type: nop_insn, area_pal: 0x803219cc} # log under 5-3
+  # - {name: removeW5PoisonBubble2, type: nop_insn, area_pal: 0x808E3028} # raft behind 5-4 
   # - {name: removeW8LavaEffects, type: nop_insn, area_pal: [0x80321998, 0x803219a8]}
   # - {name: removeBowserCastleFire, type: nop_insn, area_pal: 0x80321aa4}
   # - {name: removeW9Comets, type: nop_insn, area_pal: 0x803219e0}
