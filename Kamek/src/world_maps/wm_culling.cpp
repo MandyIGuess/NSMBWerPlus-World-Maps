@@ -13,9 +13,3 @@ f32 getWmActorCullRadius(short profName) {
 
     return wmActorCullRadius[profName - WM_IBARA];
 }
-
-// Bosses have a virtual func that gets the cull radius,
-// they all use 100.0 besides Kamek, who uses 10000.0f
-f32 getWmBossKameckCullRadius() {
-    return wmActorCullRadius[WM_BOSS_KAMECK - WM_IBARA];
-}
