@@ -43,11 +43,15 @@ hooks:
   # - {name: removeW8Bubble, type: patch, addr_pal: 0x808ca570, data: '4E800020'}
 
 # Effect Removals
-  # - {name: removeW3Snow, type: nop_insn, area_pal: [0x80321978, 0x80321988]}
-  # - {name: removeW5PoisonBubble, type: nop_insn, area_pal: 0x803219cc}
-  # - {name: removeW8LavaEffects, type: nop_insn, area_pal: [0x80321998, 0x803219a8]}
-  # - {name: removeBowserCastleFire, type: nop_insn, area_pal: 0x80321aa4}
-  # - {name: removeW9Comets, type: nop_insn, area_pal: 0x803219e0}
+  # - {name: removeW3SnowA, type: nop_insn, area_pal: 0x808E2FCC}
+  # - {name: removeW3SnowB, type: nop_insn, area_pal: 0x808E2FF8}
+  # - {name: removeW5PoisonBubble1, type: nop_insn, area_pal: 0x808E3050} # 5-3 log
+  # - {name: removeW5PoisonBubble2, type: nop_insn, area_pal: 0x808E3028} # 5-4 raft
+  # - {name: removeW8LavaBubble, type: nop_insn, area_pal: 0x808E3080}
+  # - {name: removeW8FireParticle, type: nop_insn, area_pal: 0x808E30A8}
+  # - {name: removeBowserCastleFire1, type: nop_insn, area_pal: 0x808E30D4}
+  # - {name: removeBowserCastleFire2, type: nop_insn, area_pal: 0x808E3104}
+  # - {name: removeW9Comets, type: nop_insn, area_pal: 0x808E313C}
 
 # Koopaling/Airship Removal
   # - {name: removeAirship, type: patch, addr_pal: 0x808dbee0, data: '4E800020'}

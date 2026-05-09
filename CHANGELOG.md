@@ -18,3 +18,6 @@ making the next route anim (or the course unlock) happen earlier than intended.
 * Added support for changing the "Last Course" list, which controls some behavior regarding 8-Castle's completion, and if the W5 vines spawn
 * Added support for playing different background music in sub-areas
   * This is currently limited to existing non-stage BGM tracks (menu tracks and other map themes), however this may be changed in the future
+* Updated effect removal patches to properly remove the effect instead of disabling it for the entire World Map system
+  * As a result, this splits the patches into multiple parts, allowing for more control over what is and isn't enabled
+  * Added missing patch to remove the poison bubbles under the raft in World 5
