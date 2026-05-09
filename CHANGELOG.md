@@ -16,3 +16,5 @@ making the next route anim (or the course unlock) happen earlier than intended.
 * Added support for Tower/Castle 2 courses having Star Coins with the retail condition system (no difference is noticable when using LevelInfo)
 * Added patches to remove the "hint" messages seen when exiting Toad Houses, Peach's Castle, or getting a Game Over (off by default)
 * Added support for changing the "Last Course" list, which controls some behavior regarding 8-Castle's completion, and if the W5 vines spawn
+* Added support for playing different background music in sub-areas
+  * This is currently limited to existing non-stage BGM tracks (menu tracks and other map themes), however this may be changed in the future
