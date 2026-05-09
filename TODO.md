@@ -15,3 +15,4 @@
 * Add support for standalone SRT route anims (they work with an accompanying texMask, but not by themselves?)
 * Replacement for World 6 extending pipes that is much more user-friendly(?)
 * Add new `anime_NAME` bones that will start playing `NAME` anim (regardless of type, CHR/CLR/SRT)
+* Allow for per-world titlescreens via LevelInfo entries (requested by TheMarioMan)

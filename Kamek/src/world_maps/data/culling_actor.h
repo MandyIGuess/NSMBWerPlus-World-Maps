@@ -36,7 +36,7 @@ static const f32 wmActorCullRadius[] = {
     100.0f,   // WM_BOSS_LEMMY   : ^
     100.0f,   // WM_BOSS_MORTON  : ^
     100.0f,   // WM_BOSS_LUDWIG  : ^
-    100.0f,   // WM_BOSS_KAMECK  : ^
+    10000.0f, // WM_BOSS_KAMECK  : ^
     100.0f,   // WM_ANTLION      : World 2 sinkhole ambushes
     60.0f,    // WM_KURIBO       : World 1 Goomba
     60.0f,    // WM_PUKU         : World 4 Porcupuffer
