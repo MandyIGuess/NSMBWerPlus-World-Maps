@@ -5,7 +5,6 @@
 * Add support for XX-10 -> XX-19 course nodes
 * Dehardcoded WM_PAKKUNHEAD
 * Dehardcoded WM_IBARA
-* Update culling hack to v1.3.0
 * Optional ability to remove post 1-3 cutscene (Toad Rescue introduction)
 * Fix "ice" point flag not making ice particles (seems like it might need a custom effect?)
 

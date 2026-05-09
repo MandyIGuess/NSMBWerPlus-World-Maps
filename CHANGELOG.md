@@ -7,6 +7,7 @@
   * See `/src/world_maps/data/culling_actor.h` for Map Actor culling
   * See `/src/world_maps/data/culling_map_model.h` for culling the map itself
   * See `/src/world_maps/data/culling_wm_cloud.h` for culling the World 7 clouds
+  * See `/src/world_maps/data/culling_wm_ibara.h` for culling the World 5 vines
 * Support for changing which boss is present in a world.
 * Fixed a bug where the Tower appears jumped on when bosses jump into a Castle.
 * Dehardcoded the HUD icon for the Start Nodes, they will display the direction of the node itself.

@@ -4,6 +4,7 @@
 #include "world_maps/data/culling_actor.h"
 #include "world_maps/data/culling_map_model.h"
 #include "world_maps/data/culling_wm_cloud.h"
+#include "world_maps/data/culling_wm_ibara.h"
 
 f32 getWmActorCullRadius(short profName) {
     // There are map actors before WM_IBARA, however they do not need to be culled

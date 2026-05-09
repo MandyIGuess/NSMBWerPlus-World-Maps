@@ -2580,11 +2580,7 @@ SECTIONS {
 	m_instance__9dScWMap_c = 0x8042A514;
 	m_WorldNo__9dScWMap_c = 0x8042A52D;
 
-	returnFromWmModelCull1 = 0x808E3188;
-	returnFromWmModelCull2 = 0x808E3260;
 	returnFromWmActorCull = 0x800F2A4C;
-	returnFromWmCloudCull1 = 0x808CD9E8;
-	returnFromWmCloudCull2 = 0x808CDA80;
 
 	bossJump__12daWmToride_cFi = 0x808F2C80;
 	dWmSeManager_c__m_pInstance = 0x8042A55C;

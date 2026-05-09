@@ -7,24 +7,22 @@
 .extern getWmActorCullRadius__Fs
 .extern wmCloudCullNames
 .extern wmCloudCullRadius
+.extern wmIbaraCullNames
+.extern wmIbaraCullRadius
 
-.extern returnFromWmModelCull1 # 0x808E3188
-.extern returnFromWmModelCull2 # 0x808E3260
 .extern returnFromWmActorCull  # 0x800F2A4C
-.extern returnFromWmCloudCull1 # 0x808CD9E8
-.extern returnFromWmCloudCull2 # 0x808CDA80
 
 .global newCullInfo
 newCullInfo:
     lis     r29, wmNodeCullTable@h
     ori     r29, r29, wmNodeCullTable@l
-	b       returnFromWmModelCull1
+	blr
 
 .global newCullInfo2
 newCullInfo2:
     lis     r31, wmNodeCullTable@h
     ori     r31, r31, wmNodeCullTable@l
-	b       returnFromWmModelCull2
+	blr
 
 .global CullAllWmActors
 CullAllWmActors:
@@ -39,10 +37,23 @@ CullAllWmActors:
 LoadWmCloudCullNames:
     lis     r30, wmCloudCullNames@h
     ori     r30, r30, wmCloudCullNames@l
-    b       returnFromWmCloudCull1
+    blr
 
 .global LoadWmCloudCullRadius
 LoadWmCloudCullRadius:
     lis     r29, wmCloudCullRadius@h
     ori     r29, r29, wmCloudCullRadius@l
-    b       returnFromWmCloudCull2
+    blr
+
+.global LoadWmIbaraNames
+LoadWmIbaraNames:
+    lis     r29, wmIbaraCullNames@h
+    ori     r29, r29, wmIbaraCullNames@l
+    blr
+
+.global LoadWmIbaraRadius
+LoadWmIbaraRadius:
+    lis     r4, wmIbaraCullRadius@h
+    ori     r4, r4, wmIbaraCullRadius@l
+    lfs     f31, 0x0(r4)
+    blr
